@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import capsJson from './caps.json';
+import Caps from '../Caps';
 
 
 class Home extends Component {
@@ -11,11 +12,8 @@ class Home extends Component {
                 {capsJson.map((cap, index) => {
                     let path ="./img/"+cap.pathcaps;
                     return(
+                        <Caps movie={cap.movie} pathcaps={path} key={index} />
 
-                        <div className="container" key={index}>
-                            <h4 className="text-center">{cap.movie}</h4>
-                            <img src={path} />
-                        </div>
                 )
                 })}
             </div>
