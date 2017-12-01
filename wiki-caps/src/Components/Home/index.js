@@ -11,12 +11,12 @@ class Home extends Component {
         return(
             <div>
                 {caps.map((cap, index) => {
-                    console.log(cap.pathcaps)
+                    console.log(index)
                     let path ="./img/"+cap.pathcaps;
                     return(
-                        <div>
-                            <h4>{cap.movie}</h4>
-                            <img src={path} key={index}/>
+                        <div className="container" key={index}>
+                            <h4 className="text-center">{cap.movie}</h4>
+                            <img src={path} />
                         </div>
                 )
                 })}
