@@ -5,10 +5,10 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <Router>
                     <div className="collapse navbar-collapse">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
                                 <Link to="/">Home</Link>
                             </li>
