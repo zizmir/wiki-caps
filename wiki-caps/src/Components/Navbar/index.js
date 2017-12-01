@@ -11,7 +11,7 @@ class Navbar extends Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h1 className="App-title">Wikicaps</h1>
                     <nav>
-                        <Link to='/'>Home</Link>&nbsp; &nbsp;
+                        <Link to='/' >Home</Link>&nbsp; &nbsp;
                     </nav>
 
                 </header>

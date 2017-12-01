@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch , Redirect} from 'react-router-dom';
-import Home from "./Components/Navbar";
+import Home from "./Components/Home";
 import Error404 from "./Components/Error404";
 import Gallery from "./Components/Gallery";
 import App from "./Components/App";
