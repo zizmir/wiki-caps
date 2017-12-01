@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import capsJson from './caps.json';
+import capsJson from '../../caps.json';
 import Caps from '../Caps';
 import _ from 'lodash';
 

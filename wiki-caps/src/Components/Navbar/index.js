@@ -12,6 +12,7 @@ class Navbar extends Component {
                     <h1 className="App-title">Wikicaps</h1>
                     <nav>
                         <Link to='/' >Home</Link>&nbsp; &nbsp;
+                        <Link to='/gallery' >Gallery</Link>&nbsp; &nbsp;
                     </nav>
 
                 </header>
