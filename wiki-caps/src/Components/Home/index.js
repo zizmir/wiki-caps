@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import caps from 'caps.json';
+import caps from './caps.json';
 
 
 class Home extends Component {
@@ -8,11 +8,21 @@ class Home extends Component {
         super();
     }
     render() {
-        <h4>Random caps of the moment</h4>
-        console.log(caps)
-        caps.map((item, index) => {
-
-        })}
+        return(
+            <div>
+                {caps.map((cap, index) => {
+                    console.log(cap.pathcaps)
+                    let path ="./img/"+cap.pathcaps;
+                    return(
+                        <div>
+                            <h4>{cap.movie}</h4>
+                            <img src={path} key={index}/>
+                        </div>
+                )
+                })}
+            </div>
+        )
+    }
 
 
 }
