@@ -4,8 +4,8 @@ import errorGif from './404_gif_2.gif';
 class Error404 extends Component {
     render() {
         return (
-            <div >
-            <img className="center-block" src={errorGif} />
+            <div>
+                <img className="center-block" src={errorGif}/>
             </div>
         );
     }

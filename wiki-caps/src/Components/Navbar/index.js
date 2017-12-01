@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import logo from './logo.svg';
 
 class Navbar extends Component {
@@ -8,7 +8,7 @@ class Navbar extends Component {
             <div className="App">
                 <header className="App-header">
 
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={logo} className="App-logo" alt="logo"/>
                     <h1 className="App-title">Wikicaps</h1>
                     <nav>
                         <Link to='/' >Home</Link>&nbsp; &nbsp;

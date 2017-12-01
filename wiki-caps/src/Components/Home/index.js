@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import capsJson from './caps.json';
 import Caps from '../Caps';
+import _ from 'lodash';
 
 
 class Home extends Component {
@@ -9,13 +10,7 @@ class Home extends Component {
     render() {
         return(
             <div>
-                {capsJson.map((cap, index) => {
-                    let path ="./img/"+cap.pathcaps;
-                    return(
-                        <Caps movie={cap.movie} pathcaps={path} key={index} />
-
-                )
-                })}
+                <Caps caps={_.sample(capsJson)}/>
             </div>
         )
     }

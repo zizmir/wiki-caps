@@ -5,9 +5,8 @@ import Error404 from "./Components/Error404";
 import Gallery from "./Components/Gallery";
 import App from "./Components/App";
 
-const MyRoute = ()=>(
+const MyRoute = ()=> (
     <Router>
-
         <App name='layout'>
             <Switch>
                 <Route exact path="/" component={Home}/>
@@ -15,8 +14,7 @@ const MyRoute = ()=>(
                 <Route component={Error404}/>
             </Switch>
         </App>
-
     </Router>
-)
+);
 
 export default MyRoute;
