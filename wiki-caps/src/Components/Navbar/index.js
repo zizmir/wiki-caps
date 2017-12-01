@@ -15,9 +15,7 @@ class Navbar extends Component {
                     </nav>
 
                 </header>
-                <p className="App-intro">
-                    Bienvenue dans la gallery wiki caps
-                </p>
+
             </div>
         );
     }
