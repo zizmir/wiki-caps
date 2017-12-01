@@ -1,24 +1,24 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
-
+import logo from './logo.svg';
 
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar">
-                <Router>
-                    <div className="collapse navbar-collapse">
-                        <ul className="navbar-nav">
-                            <li className="nav-item active">
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/gallery">Gallery</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </Router>
-            </nav>
+            <div className="App">
+                <header className="App-header">
+
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <h1 className="App-title">Wikicaps</h1>
+                    <nav>
+                        <Link to='/'>Home</Link>&nbsp; &nbsp;
+                    </nav>
+
+                </header>
+                <p className="App-intro">
+                    Bienvenue dans la gallery wiki caps
+                </p>
+            </div>
         );
     }
 }

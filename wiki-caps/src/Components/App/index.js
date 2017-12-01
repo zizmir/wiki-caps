@@ -9,10 +9,11 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Navbar/>
+
                 <Router>
+
                     <div>
-                        <Route path='/' component={Home}/>
+                        <Navbar/>
                     </div>
                 </Router>
             </div>
