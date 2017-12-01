@@ -13,6 +13,9 @@ class Navbar extends Component {
                     <nav>
                         <Link to='/' >Home</Link>&nbsp; &nbsp;
                         <Link to='/gallery' >Gallery</Link>&nbsp; &nbsp;
+                        <Link to='/sign-in' >Sign in</Link>&nbsp; &nbsp;
+                        <Link to='/sign-up' >Sign up</Link>&nbsp; &nbsp;
+                        <Link to='/profile/view' >Profile</Link>
                     </nav>
 
                 </header>

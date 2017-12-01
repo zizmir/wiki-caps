@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import capsJson from '../../caps.json';
+import capsJson from '../data/caps.json';
 import Caps from '../Caps';
 import _ from 'lodash';
 
@@ -8,9 +8,11 @@ class Home extends Component {
 
 
     render() {
+
+        let caps= _.sample(capsJson);
         return(
             <div>
-                <Caps caps={_.sample(capsJson)}/>
+                <Caps movie={caps.movie} pathcaps={caps.pathcaps}/>
             </div>
         )
     }

@@ -3,7 +3,6 @@ import Caps from '../Caps';
 
 class Gallery extends Component {
 
-
     constructor(){
         super();
         this.state ={
@@ -17,8 +16,8 @@ class Gallery extends Component {
 
     render() {
         const arCaps = this.state.caps.map((cap, index) => {
-            let path ="./img/"+cap.pathcaps;
-            return <Caps movie={cap.movie} pathcaps={path} key={index} />
+
+            return <Caps movie={cap.movie} pathcaps={cap.pathcaps} key={index} />
         })
         return(
             <div>{arCaps}</div>

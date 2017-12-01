@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 
 
 class Caps extends Component {
+
     render() {
         return (
-        <div className="container" key={this.props.caps.key}>
-            <h4 className="text-center">{this.props.caps.movie}</h4>
-            <img src={"./img/" + this.props.caps.pathcaps} />
+        <div className="container">
+            <h4 className="text-center">{this.props.movie}</h4>
+            <img src={"./img/" + this.props.pathcaps} />
         </div>);
     }
 }
