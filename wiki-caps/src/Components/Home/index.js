@@ -9,7 +9,6 @@ class Home extends Component {
         return(
             <div>
                 {caps.map((cap, index) => {
-                    console.log(index)
                     let path ="./img/"+cap.pathcaps;
                     return(
                         <div className="container" key={index}>
